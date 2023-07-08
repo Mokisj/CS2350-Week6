@@ -1,0 +1,54 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body {
+    width: 80%;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.Gallery {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: .5rem;
+    border-radius: 1rem;
+    flex-flow: column nowrap;
+}
+
+.Gallery>.top {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.image {
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+div {
+    flex: 1;
+}
+
+.Gallery>.top>.left,
+.Gallery>.top>.middle,
+.Gallery>.top>.right {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Gallery>.top>.right>.top,
+.Gallery>.top>.right>.bottom {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Gallery > .bottom{
+    display: flex;
+    flex-flow: row nowrap;
+}

@@ -1,0 +1,152 @@
+
+        .root {
+            font-size: 16px;
+        }
+
+        header {
+            background-color: rgba(245, 236, 220, 0.919);
+            padding-top: 3.5px;
+            padding-bottom: 3.5px;
+        }
+        .Top-menu > li {
+            display: inline;
+            padding-right: 10px;
+            
+            
+        }
+        .right1, .right2 {
+            float: right;
+            color: orange;
+        }
+
+        .left1, .left2, .left3, .left4, .left5 {
+            color: orange;
+        }
+
+        body{
+            margin: 0;
+        }
+        
+        main {
+            margin: 5%;
+        }
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            border: none;
+            float: right;
+            top: 0;
+            left: 0;
+        }
+
+        .VidwCap {
+            padding-bottom: 20px;
+            border-bottom: 2px solid gray;
+            position: relative;
+        }
+
+        .VidwCap > h1 {
+            font-size: 40px;
+        }
+
+        .Wthvid{
+            font-size: 10px;
+            color: rgb(172, 172, 172);
+        }
+
+        .vidButtons {
+            padding-top: 15px;
+            padding-left: 1px;
+        }
+
+        .vidButtons > li {
+            display: inline;
+            padding: 10px;
+            background-color: orange;
+            border-radius: 5px;
+        }
+
+
+        .cards {
+            text-align: center;
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .card{
+            flex-grow: 1;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .cards > div {
+            display: inline-block;
+            width: 30%;
+            margin: 5px;
+            vertical-align: top;
+            height: 300px;
+            border: 2px solid gray;
+        }
+
+        .cards > div > ul, .cards > div > p {
+            text-align: left;
+            font-size: 10px;
+            color: lightgray;
+        }
+
+        img {
+            height: 50%;
+            width: 100%;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button > li{
+            display: inline;
+            background-color: orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            background-color: black;
+        }
+
+        th, td {
+            color: white;
+        }
+        th {
+            font-size: 12px;
+            text-align: left;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        td {
+            font-size: 9px;
+            text-align: left;
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+
+        .footop > li{
+            display: inline;
+            padding-right: 5px;
+            font-size: 9px;
+           
+        }
+
+        .legal {
+            float: right;
+        }
+
+        .op1{
+            margin-left: 12%;
+        }
+
+        .op1, .op2, .op3 {
+            color: orange; 
+        }   

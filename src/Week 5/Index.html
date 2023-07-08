@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="a newsletter page">
+    <title>Assignment 5</title>
+
+    <link rel="stylesheet" href="./CSS/ASSI5.css">
+
+    <style>
+        .root {
+            font-size: 16px;
+        }
+
+        header {
+            background-color: rgba(245, 236, 220, 0.919);
+            padding-top: 3.5px;
+            padding-bottom: 3.5px;
+        }
+        .Top-menu > li {
+            display: inline;
+            padding-right: 10px;
+            
+            
+        }
+        .right1, .right2 {
+            float: right;
+            color: orange;
+        }
+
+        .left1, .left2, .left3, .left4, .left5 {
+            color: orange;
+        }
+
+        body{
+            margin: 0;
+        }
+        
+        main {
+            margin: 5%;
+        }
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            border: none;
+            float: right;
+            top: 0;
+            left: 0;
+        }
+
+        .VidwCap {
+            padding-bottom: 20px;
+            border-bottom: 2px solid gray;
+            position: relative;
+        }
+
+        .VidwCap > h1 {
+            font-size: 40px;
+        }
+
+        .Wthvid{
+            font-size: 10px;
+            color: rgb(172, 172, 172);
+        }
+
+        .vidButtons {
+            padding-top: 15px;
+            padding-left: 1px;
+        }
+
+        .vidButtons > li {
+            display: inline;
+            padding: 10px;
+            background-color: orange;
+            border-radius: 5px;
+        }
+
+
+        .cards {
+            text-align: center;
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .card{
+            flex-grow: 1;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .cards > div {
+            display: inline-block;
+            width: 30%;
+            margin: 5px;
+            vertical-align: top;
+            height: 300px;
+            border: 2px solid gray;
+        }
+
+        .cards > div > ul, .cards > div > p {
+            text-align: left;
+            font-size: 10px;
+            color: lightgray;
+        }
+
+        img {
+            height: 50%;
+            width: 100%;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button > li{
+            display: inline;
+            background-color: orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            background-color: black;
+        }
+
+        th, td {
+            color: white;
+        }
+        th {
+            font-size: 12px;
+            text-align: left;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        td {
+            font-size: 9px;
+            text-align: left;
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+
+        .footop > li{
+            display: inline;
+            padding-right: 5px;
+            font-size: 9px;
+           
+        }
+
+        .legal {
+            float: right;
+        }
+
+        .op1{
+            margin-left: 12%;
+        }
+
+        .op1, .op2, .op3 {
+            color: orange; 
+        }   
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <ul class="Top-menu">
+            <li>Utah Mighty <Strong>FIVE</Strong></li>
+            <li class="left1"><a>One</a></li>
+            <li class="left2"><a>Two</a></li>
+            <li class="left3"><a>Three</a></li>
+            <li class="left4"><a>Four</a></li>
+            <li class="left5"><a>Five</a></li> 
+
+            <li class="right1"><a>Login</a></li>
+            <li class="right2"><a>Account</a></li>
+
+        </ul>
+
+    </header>
+
+    <main>
+
+
+        <article class="VidwCap">
+            <iframe class="video" src="https://www.youtube.com/embed/iKJ-TuDl8h0" frameborder="1000"></iframe>
+            <h1>Close Your Eyes and Open Your Mind</h1>
+            <p class="Wthvid">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptas reiciendis velit labore
+            eius modi impedit repudiandae facilis voluptates! Itaque voluptatum repellendus numquam in consectetur
+            ipsanon necessitatibus animi dolorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            eaque. 
+            </p>
+            <ul class="vidButtons">
+                <li>Take a Tour</li>
+                <li>Start a free trial</li>
+            </ul>
+        </article>
+
+        <h3>What are they?</h3>
+
+        <section class="cards">
+            <div class="card">
+                <img src="./images/bertrand-borie-CqyXj895IUg-unsplash.jpg" alt="Bryce canyon pic">
+                <h4>Bryce Canyon National Park</h4>
+                <p>Enim sequi rerum maiores totam iste quas iusto accusantium assumenda, suscipit cupiditate aliquid
+                    eius odit ratione ab veniam aut, fugiat in voluptas!</p>
+
+            </div>
+            <div class="card">
+                <img src="./images/alex-donnachie-tvg2AeJHfbM-unsplash.jpg" alt="zion national park">
+                <h4>Zion National Park</h4>
+                <p>orem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eveniet quo reiciendis
+                    exercitationem nul</p>
+            </div>
+            <div class="card">
+                <img src="./images/noaa-1w3rdBTQJug-unsplash.jpg" alt="arches national park">
+                <h4>Arches National Park</h4>
+                <p>orem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eveniet quo reiciendis
+                    exercitationem nul</p>
+            </div>
+        </section>
+
+        <ul class="button">
+            <li>Remaining two</li>
+        </ul>
+    </main>
+
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Offices</strong></th>
+                    <th><strong>Links</strong></th>
+                    <th><strong>Contact</strong></th>
+                    <th><strong>Locations</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One</td>
+                    <td>One</td>
+                    <td>Twitter</td>
+                    <td>One</td>
+                </tr>
+                <tr>
+                    <td>Two</td>
+                    <td>Two</td>
+                    <td>Facebook</td>
+                    <td>Two</td>
+                </tr>
+                <tr>
+                    <td>Three</td>
+                    <td>Three</td>
+                    <td>Instagram</td>
+                    <td>Three</td>
+                </tr>
+                <tr>
+                    <td>Four</td>
+                    <td>Four</td>
+                    <td>Pintrest</td>
+                    <td>Four</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="footop">
+            <li class="op1">Legal</li>
+            <li class="op2">Partner</li>
+            <li class="op3">Explore</li>
+
+            <li class="legal">&copy; <strong>2021 - 2025 All rights reserved</strong></li>
+        </ul>
+    </footer>
+</html>
+
+</body>
+

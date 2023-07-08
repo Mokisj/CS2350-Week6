@@ -1,0 +1,215 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+/*mobile view*/
+body{
+    width: 100%;
+    margin: 0 auto 1rem;
+    flex-flow: column nowrap;
+}
+
+.menu, .search{
+    display:none;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: 3%;
+    
+}
+
+.main{
+    flex-flow: column nowrap;
+}
+
+img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+h3{
+    margin-top: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.author{
+    color: rgb(165, 164, 164);
+}
+
+.top{
+    border-top: 2px solid gray;
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+
+.right{
+    display: none;
+}
+
+.bottom{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.read-more-button{
+    display: none;
+}
+
+.footer{
+    text-align: center;
+    background-color: rgb(66, 61, 61);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.foot-list{
+    display: none;
+}
+
+
+
+@media screen and (min-width:1000px){
+
+    .header{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .right-header{
+        display: flex;
+    }
+
+    .left-header{
+        display: flex;
+        margin-right: 70%;
+    }
+    
+    img{
+        width: 50%;
+        border-radius: 1rem;
+    }
+    
+    .main{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20%;
+    }
+
+    .right{
+        display: block;
+        background-color: rgb(182, 180, 180);
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 3rem;
+        margin-top: 2%;
+        margin-right: 20%;
+    }
+
+    .title-right{
+        margin: 5%;
+    }
+
+    .right-content{
+        align-items: center;
+        margin: 5%;
+    }
+
+    .img-right{
+        display: flex;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .top{
+        display: flex;
+        flex-flow: row nowrap;
+        border-top: none;
+    }
+
+    .bottom{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .content{
+        margin-left: 5%;
+    }
+
+    .read-more-button{
+        display: block;
+        background-color: orange;
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 3px;
+    }
+
+    .search{
+        display: block;
+        float: right;
+        border-radius: 4px;
+    }
+
+    .menu{
+        display: block;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(206, 205, 205);
+        padding-bottom: 5px;
+        flex-flow: row nowrap;
+        padding-top: 15px;
+    }
+
+    .menu-list{
+        display: flex;
+        list-style: none;
+    }
+
+    .menu-item a{
+        text-decoration: none;
+        margin: 15px;
+        color: orange;
+      }
+
+      .foot-list{
+        display: block;
+        display: flex;
+        list-style: none;
+      }
+
+      .social{
+        text-decoration: none;
+        margin: 5px;
+        color: white;
+        justify-content: center;
+      }
+
+      .foot-left{
+        display: flex;
+        margin-right: 70%;
+      }
+
+      .foot-right{
+        display: flex;
+      }
+}

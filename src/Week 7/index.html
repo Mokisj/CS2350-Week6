@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Project Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="TODO: A starter project for ..." />
+
+  
+  <style>
+    :root{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      box-sizing: border-box;
+
+    }
+
+    *, ::after, ::before{
+      box-sizing: inherit;
+    }
+
+    header {
+      font-size: 2rem;
+      padding: 1 1rem;
+    background-color: white;
+    line-height: 50px;
+    }
+
+    header > ul > li{
+      display: inline;
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    header > ul > .right{
+      float: right;
+    }
+
+    footer {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0 1rem;
+      height: 60px;
+      line-height: 60px;
+      background-color: lightgray;
+    }
+
+    body{
+      margin: 0;
+      background-color: rgb(197, 222, 231);
+    }
+
+    .use-flex #main-container {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100vw;
+      }
+
+    .use-float #main-container {
+      width: 100vw;
+      height:calc(100vh - 110px);
+      padding-right: 10%;
+    }
+
+
+    .use-flex #main-col {
+      padding-top: 10px;
+      padding-left: 10px;
+      flex: 1;
+      background-color: white;
+      border-radius: 1rem;
+    }
+
+    .use-float #main-col {
+      display: table-cell;
+      background-color: yellowgreen;
+    }
+
+
+    .clearfix::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #main-container [selected]{
+      border-color: lime;
+    }
+
+    #main-col [type="featured"]{
+      border: 3px solid white;
+      background-color: black;
+    }
+
+    .lists {
+      list-style: none;
+    }
+
+    .username{
+      color: green;
+    }
+
+
+    @media all and (min-width: 600px) {
+      .use-flex #main-col .box {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+       .use-flex #main-col .box {
+        margin: 1rem 0 0 1rem;
+        width: calc((100% - 3rem));
+      }
+
+      .use-float #main-col .box {
+        float: left;
+        margin: 1rem 0 0 1rem;
+        width: calc(100% - 3rem);
+      }
+      
+    }
+
+    @media all and (min-width: 800px) {
+      .use-flex #main-col {
+        flex: 5;
+      }
+
+      .use-float #main-col {
+        width: 70%;
+      }
+
+      .use-flex #aside-col {
+      display: table-cell;
+      flex: 7;
+      background-color: white;
+      vertical-align: top;
+      border-radius: 1rem;
+      }
+    }
+
+  </style>
+    
+</head>
+
+<body class="use-flex">
+  <header>
+    <ul class="left">
+      <li>Jacob Larsen</li>
+      <li><a href="#link_1">Home</a></li>
+      <li><a href="#link_1">Products</a></li>
+      <li><a href="#link_1">Services</a></li>
+      <li><a href="#link_1">Contact Us</a></li>
+    
+      <li class="right">Sign in</li>
+      <li class="right">Sign up</li>
+  </ul>
+</header>
+
+  <div class="container" id="main-container">
+
+    <div id="main-col">
+      <div class="boxes clearfix">
+        <h3>Main Menu</h3>
+        <ul class="lists">
+          <li><a href="#link_1">Home</a></li>
+          <li><a href="#link_1">Products</a></li>
+          <li><a href="#link_1">Services</a></li>
+          <li><a href="#link_1">About Us</a></li>
+        </ul>
+        <h3>Featured projects</h3>
+        <ul class="lists">
+         <li><a href="#link_1">Project A</a></li>
+         <li><a href="#link_1">Project B</a></li>
+         <li><a href="#link_1">Project C</a></li>
+         <li><a href="#link_1">Project D</a></li>
+         <li><a href="#link_1">Project F</a></li>
+         <li><a href="#link_1">Project G</a></li>
+        </ul>
+       </div>
+      
+    </div>
+    <div id="aside-col">
+      <div class="boxes clearfix">
+         <h2>Contact Us Form</h2>
+        <h4>Name</h4>
+        <div><input type="text" size="50"></div>
+
+        <h4>UserName</h4>
+        <div selected class="username"><input type="text" size="50"></div>
+        <h6>This username is avaliable</h6>
+
+        <h4>Are you a member?</h4>
+        <div><input type="radio" name="contact">  yes</div>
+        <div><input type="radio" size="contact">   no</div>
+
+
+        <h4>Email</h4>
+        <div><input type="text" size="50"></div>
+
+        <h4>Message</h4>
+        <div class="messagebox"><input rows="5" type="text"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <footer>footer</footer>
+ 
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
+</html>
